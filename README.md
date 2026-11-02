@@ -1,6 +1,6 @@
 # Central Macatuba — Documentação da API Pública
 
-Este repositório publica uma interface estática e interativa com **Swagger UI** para consultar exclusivamente o contrato da **API pública** da Central Macatuba. l
+Este repositório publica uma interface estática e interativa com **Swagger UI** para consultar exclusivamente o contrato da **API pública** da Central Macatuba.
 
 ## Conteúdo
 
