@@ -1,0 +1,58 @@
+:root {
+  color-scheme: light;
+  --cm-red: #d71920;
+  --cm-black: #171717;
+  --cm-muted: #5d626b;
+  --cm-border: #e3e5e8;
+  --cm-surface: #f5f6f8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cm-surface);
+  color: var(--cm-black);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.55;
+}
+a { color: #a90e15; }
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem clamp(1rem, 4vw, 3rem);
+  background: #fff;
+  border-bottom: 3px solid var(--cm-red);
+}
+.brand { display: inline-flex; align-items: center; gap: .8rem; color: inherit; text-decoration: none; }
+.brand-mark {
+  display: grid; place-items: center; width: 2.8rem; height: 2.8rem;
+  background: var(--cm-red); color: white; font-weight: 800; border-radius: .45rem;
+}
+.brand strong, .brand small { display: block; }
+.brand small { color: var(--cm-muted); font-size: .82rem; }
+.spec-link { font-weight: 650; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+main { width: min(100% - 2rem, 1440px); margin: 0 auto 2rem; }
+.intro { padding: clamp(1.5rem, 4vw, 3rem) 0 1rem; max-width: 900px; }
+.eyebrow { margin: 0 0 .35rem; color: var(--cm-red); font-size: .78rem; font-weight: 800; letter-spacing: .12em; }
+h1 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; }
+.intro > p:not(.eyebrow) { color: var(--cm-muted); max-width: 75ch; }
+.notice {
+  padding: .9rem 1rem; background: #fff; border-left: 4px solid var(--cm-red);
+  border-radius: .25rem; color: var(--cm-black) !important;
+}
+#swagger-ui { background: #fff; border: 1px solid var(--cm-border); border-radius: .5rem; overflow: hidden; }
+#swagger-ui .wrapper { max-width: none; padding: 1rem; }
+.loading, .load-error { padding: 1.5rem; }
+.load-error { color: #a90e15; }
+.site-footer {
+  display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  padding: 1.25rem clamp(1rem, 4vw, 3rem); background: #fff; border-top: 1px solid var(--cm-border);
+  color: var(--cm-muted); font-size: .9rem;
+}
+@media (max-width: 600px) {
+  .site-header { align-items: flex-start; flex-direction: column; }
+  main { width: min(100% - 1rem, 1440px); }
+  #swagger-ui .wrapper { padding: .5rem; }
+}

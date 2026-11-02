@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#d71920">
+    <meta name="description" content="Documentação interativa da API pública da Central Macatuba.">
+    <title>API Pública — Central Macatuba</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.33.3/swagger-ui.css">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Central Macatuba — início">
+        <span class="brand-mark" aria-hidden="true">CM</span>
+        <span>
+          <strong>Central Macatuba</strong>
+          <small>Documentação da API pública</small>
+        </span>
+      </a>
+      <a class="spec-link" href="./openapi.json">Ver openapi.json</a>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">DOCUMENTAÇÃO INTERATIVA</p>
+        <h1 id="page-title">API Pública</h1>
+        <p>Explore operações, parâmetros, schemas e respostas descritos no contrato OpenAPI versionado neste repositório.</p>
+        <p class="notice"><strong>Try it out:</strong> as requisições são enviadas diretamente ao servidor público. O recurso depende das regras de CORS da API e da disponibilidade do serviço. Nenhuma credencial é fornecida por esta interface.</p>
+      </section>
+
+      <section aria-label="Operações da API">
+        <div id="swagger-ui" aria-live="polite">
+          <p class="loading">Carregando a documentação…</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Central Macatuba · API pública</span>
+      <a href="https://github.com/centralmacatuba/api-publica-docs">Código-fonte e instruções</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.33.3/swagger-ui-bundle.js" crossorigin="anonymous"></script>
+    <script>
+      window.addEventListener("load", function () {
+        if (typeof window.SwaggerUIBundle !== "function") {
+          document.getElementById("swagger-ui").innerHTML =
+            '<p class="load-error">Não foi possível carregar o Swagger UI. Verifique sua conexão com o CDN e recarregue a página.</p>';
+          return;
+        }
+
+        window.ui = SwaggerUIBundle({
+          url: "./openapi.json",
+          dom_id: "#swagger-ui",
+          deepLinking: true,
+          displayOperationId: true,
+          displayRequestDuration: true,
+          filter: true,
+          persistAuthorization: false,
+          supportedSubmitMethods: ["get", "head"],
+          presets: [SwaggerUIBundle.presets.apis],
+          layout: "BaseLayout"
+        });
+      });
+    </script>
+  </body>
+</html>
