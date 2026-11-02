@@ -1,6 +1,6 @@
 # Central Macatuba — Documentação da API Pública
 
-Este repositório publica uma interface estática e interativa com **Swagger UI** para consultar exclusivamente o contrato da **API pública** da Central Macatuba. Não contém documentação da API privada.
+Este repositório publica uma interface estática e interativa com **Swagger UI** para consultar exclusivamente o contrato da **API pública** da Central Macatuba. l
 
 ## Conteúdo
 
@@ -15,8 +15,7 @@ A interface referencia a especificação por caminho relativo (`./openapi.json`)
 
 A cópia incluída foi obtida de:
 
-- Repositório: [centralmacatuba/api](https://github.com/centralmacatuba/api)
-- Arquivo: [`publica/openapi.json` na api pública `htttpd://publica.api.centralmacatuba.qzz.io/openapi.json`](https://publica.api.centralmacatuba.qzz.io/openapi.json)
+- Arquivo: [`openapi.json` em `htttpd://publica.api.centralmacatuba.qzz.io/openapi.json`](https://publica.api.centralmacatuba.qzz.io/openapi.json)
 - Blob SHA-1 do arquivo de origem e da cópia: `4cbf791bb644059b229aece4e48b4fe8235b4522`
 - Versão OpenAPI declarada: `3.1.2`
 - Versão do contrato (`info.version`): `1.1.0`
@@ -51,7 +50,7 @@ O endereço esperado é <https://centralmacatuba.github.io/api-publica-docs/>. E
 1. Abra o repositório `centralmacatuba/api-publica-docs` no GitHub.
 2. Entre em **Settings → Pages**.
 3. Em **Build and deployment**, escolha **Deploy from a branch**.
-4. Selecione a branch que contém a implementação (`feat/swagger-ui-public-api`) e a pasta `/(root)`, caso deseje testar esta branch antes de integrar as alterações.
+4. Selecione a branch que contém a implementação (`principal`) e a pasta `/(root)`, caso deseje testar esta branch antes de integrar as alterações.
 5. Salve a configuração e aguarde o GitHub Pages concluir a publicação.
 6. Depois que a implementação for aprovada e incorporada à branch principal, ajuste a fonte de publicação para a branch principal e `/(root)`, se essa for a configuração desejada.
 
