@@ -16,13 +16,11 @@ A interface referencia a especificação por caminho relativo (`./openapi.json`)
 A cópia incluída foi obtida de:
 
 - Repositório: [centralmacatuba/api](https://github.com/centralmacatuba/api)
-- Arquivo: [`publica/openapi.json` na branch `fix/openapi-php-consistency`](https://github.com/centralmacatuba/api/blob/fix/openapi-php-consistency/publica/openapi.json)
+- Arquivo: [`publica/openapi.json` na api pública `htttpd://publica.api.centralmacatuba.qzz.io/openapi.json`](https://publica.api.centralmacatuba.qzz.io/openapi.json)
 - Blob SHA-1 do arquivo de origem e da cópia: `4cbf791bb644059b229aece4e48b4fe8235b4522`
 - Versão OpenAPI declarada: `3.1.2`
 - Versão do contrato (`info.version`): `1.1.0`
 - Servidor canônico documentado: `https://publica.api.centralmacatuba.qzz.io`
-
-**Observação de procedência:** no momento desta implementação, `publica/openapi.json` não foi encontrado na branch padrão `principal` do repositório `centralmacatuba/api`. Por isso, a cópia foi feita da branch de trabalho explicitamente indicada, `fix/openapi-php-consistency`, que contém o arquivo. Confirme que esse contrato é o aprovado antes de publicar a documentação para usuários finais. Nenhum arquivo do repositório de origem foi alterado.
 
 Para atualizar a cópia, revise primeiro o contrato pretendido no repositório de origem e então copie o arquivo integralmente, sem edição manual. Registre a branch ou commit de origem e compare a cópia byte a byte (ou por hash) com o arquivo original. Não há sincronização automática nem workflow de GitHub Actions neste projeto.
 
